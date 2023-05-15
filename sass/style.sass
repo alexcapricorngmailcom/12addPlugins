@@ -1,0 +1,462 @@
+@import _options
+@import _defaults
+@import _fonts
+
+//common styles
+
+html
+    font-size: 14px
+    font-family: Opensans
+    font-weight: 400
+    font-style: normal
+    color: #86878b
+
+.container
+    width: 100%
+    max-width: 1120px
+    margin: 0 auto
+    padding: 0 10px
+
+.title
+    font-size: 20px
+    font-weight: 700
+    color: $mainTitleColor
+
+.text
+    line-height: 1.45
+
+.link
+    display: inline-block
+    font-family: Opensans
+    font-size: 15px
+    font-weight: 600
+    border: 2px solid $white
+
+.main > section:nth-child(odd)
+    background-color: #f5f5f5
+
+//header
+
+.header
+    background-color: black
+    padding: 20px 0
+
+.nav
+    display: flex
+    justify-content: space-between
+    align-items: center
+    color: $white
+    &-menu
+        display: flex
+        &-input
+            display: none
+        &-label
+            &-menu
+                display: none
+        &-item + &-item
+            margin-left: 45px
+        &-link
+            font-weight: 600
+            transition: 0.2s
+            &:hover, &:focus
+                color: $accentColor
+
+//main
+
+.hero
+    padding: 110px 0 140px
+    background-image: url(../assets/img/heroBackground.png)
+    background-size: cover
+    color: $white
+    &-container
+        display: flex
+        justify-content: space-between
+        align-items: flex-end
+    &-info
+        max-width: 520px
+        font-family: Raleway
+        &-title
+            margin-top: 35px
+            font-size: 36px
+            text-transform: uppercase
+        &-line
+            width: 65px
+            height: 2px
+            margin-top: 40px
+            background-color: $white
+        &-text
+            margin-top: 40px
+            font-size: 16px
+            font-weight: 300
+        &-link
+            margin-top: 45px
+            padding: 15px 30px
+            transition: 0.2s
+            &:hover, &:focus
+                border-color: $accentColor
+                background-color: $accentColor                      
+    &-form
+        display: flex
+        flex-direction: column
+        align-items: center
+        background-color: $white
+        border-radius: 5px
+        overflow: hidden
+        color: $black
+        &-title
+            padding: 20px 50px 15px
+            font-size: 20px
+            font-weight: 700
+            background-color: #f5f5f5
+            &-accent
+                color: $accentColor
+        &-input
+            width: 285px
+            margin-top: 35px
+            padding: 10px 15px
+            border: none
+            border-bottom: 1px solid #bdbdbd
+            color: inherit
+            &::placeholder
+                color: #bdbdbd
+        &-button
+            width: 100%
+            margin-top: 50px
+            padding: 20px 0
+            border: none
+            font-size: 15px
+            font-weight: 600
+            background-color: $accentColor
+            transition: 0.2s
+            color: $white
+            &:hover, &:focus
+                background-image: linear-gradient(transparent, rgba(255,255,255,0.2))
+
+//social-media
+
+.social-media
+    position: relative
+    z-index: 1
+    padding: 24px 0
+    box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.4)
+    &-container
+        display: flex
+        align-items: center
+    &-block
+        min-width: 365px
+        &-title
+            color: $secondaryAccentColor
+    &-list
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-left: 90px
+        width: 100%
+        font-size: 45px
+        color: #cccccc
+        &-icon
+            transition: 0.2s
+            &:hover, &:focus
+                color: $accentColor
+
+//features
+
+.features
+    padding: 145px 0 115px
+    &-container
+        display: flex
+        align-items: center
+    &-tabs
+        flex-shrink: 0
+        &-item
+            display: block
+            text-transform: uppercase
+            padding: 50px 35px
+            background-color: $mainTitleColor
+            cursor: pointer
+            font-size: 15px
+            font-weight: 700
+            transition: 0.2s
+            color: $white
+            &:first-child
+                border-radius: 5px 5px 0 0
+            &:last-child
+                border-radius: 0 0 5px 5px
+            &:hover, &:focus
+                background-color: $accentColor
+            & + & 
+                border-top: 1px solid #c7c7c7
+    &-input, &-block
+        display: none
+    &-input:checked + &-block 
+        display: block
+    &-block
+        margin-left: 95px
+        &-title
+            color: $black
+        &-text1
+            margin-top: 55px
+        &-text2
+            margin-top: 25px
+        &-link
+            margin-top: 50px
+            padding: 15px 25px
+            background: $accentColor
+            border-color: $accentColor
+            border-radius: 5px
+            transition: 0.2s
+            box-shadow: 1px 1px 1px 0 #c7c7c7
+            color: $white
+            &:hover, &:focus
+                background-color: $white
+                color: $accentColor
+    &-img
+        margin-left: 95px
+
+//features2
+
+.features2
+    padding: 105px 0 130px 0
+    &-container
+        display: flex
+        align-items: flex-end
+    &-img
+        margin-left: -35px
+    &-block
+        margin-left: 160px
+        &-line
+            margin-top: 30px
+            background-color: $accentColor
+        &-text
+            margin-top: 30px
+    &-extra
+        margin-top: 45px
+        &-item
+            display: flex
+            & + &
+                margin-top: 40px
+        &-container
+            display: flex
+            justify-content: center
+            align-items: center
+            flex-shrink: 0
+            width: 40px
+            height: 40px
+            border-radius: 50%
+            border: 2px solid $accentColor
+            color: $accentColor
+        &-textblock
+            margin-left: 30px
+            &-title
+                font-size: 14px
+
+//features3
+
+.features3
+    padding: 75px 0
+    &-container
+        align-items: flex-start
+    &-img
+        margin-right: -35px
+        margin-left: auto
+    &-block
+        margin-top: 20px
+        margin-right: 160px
+        margin-left: auto
+        order: -1
+
+//process
+
+.process
+    padding: 105px 0
+    text-align: center
+    &-title
+        font-family: Raleway
+        font-size: 36px
+        text-transform: uppercase
+        color: $mainTitleColor
+    &-line
+        margin: 30px auto 0 auto
+    &-list
+        display: flex
+        margin: 80px -15px 0 -15px
+        &-item
+            width: calc(100% / 3)
+            padding: 0 15px
+        &-container
+            width: 70px
+            height: 70px
+            margin: 0 auto
+        &-icon
+            font-size: 28px
+        &-title
+            margin-top: 25px
+        &-text
+            margin-top: 20px
+            
+//pricing
+
+.pricing
+    padding-bottom: 95px
+    &-list
+        display: flex
+        align-items: flex-end
+        margin: 80px -20px 0 -20px
+        &-item
+            width: calc(100% / 3)
+            padding: 0 20px
+            &:nth-child(2) .pricing-card-line
+                height: auto
+                padding: 15px 15px
+                font-weight: 700
+                color: $white   
+    &-card
+        &-title
+            padding: 20px 20px
+            text-transform: uppercase
+            background-color: $secondaryAccentColor
+            color: $white
+        &-price
+            margin-top: 1px
+            padding: 0 20px 20px 20px
+            background-color: $secondaryAccentColor
+            color: $white
+            &-item1
+                font-family: Raleway
+                font-weight: bold
+                font-size: 36px
+                &-accent
+                    font-size: 94px
+            &-item2
+                font-weight: 600
+                font-style: italic
+        &-line
+            width: 100%
+            margin-top: 0
+            height: 5px
+            background-color: $accentColor
+            // TODO: p or div
+        &-option
+            padding: 15px 15px
+            text-transform: uppercase
+            background-color: $white
+            & + &
+                margin-top: 2px
+
+//testimonial
+
+.testimonial
+    padding-bottom: 100px
+    &-list
+        margin: 55px -60px 0 -60px
+        &-item
+            padding: 0 60px
+        &-text
+            position: relative
+            padding: 25px 40px 25px 10px
+            text-align: left
+            font-style: italic
+            border-radius: 5px
+            background-color: #f5f5f5
+            &:after
+                position: absolute
+                content: ""
+                top: 100%
+                left: 25px
+                border-style: solid
+                border-width: 15px 10px 0 10px
+                border-color: #f5f5f5 transparent transparent transparent
+        &-container
+            margin: unset
+            overflow: hidden
+            border: none
+        &-imgBlock
+            display: flex
+            align-items: center
+            margin-top: 23px
+            &-img
+                width: 70px
+                height: 70px
+        &-textBlock
+            display: flex
+            flex-direction: column
+            margin-left: 15px
+            text-align: left
+            &-profession
+                margin-top: 10px
+     
+//custom
+
+.custom
+    padding: 75px 0 62px
+    background-image: url(../assets/img/сustomBackground.png)
+    background-size: cover
+    &-info
+        display: flex
+        flex-direction: column
+        align-items: center
+        max-width: 100%
+        text-align: center
+        &-title
+            margin-top: 0
+            font-weight: 400
+        &-line
+            margin-top: 30px
+        &-text
+            margin-top: 30px
+        &-link
+            margin-top: 35px
+
+//contactUs
+
+.contactUs
+    padding: 100px 0 80px
+    background-image: none
+    color: inherit
+    &-info
+        &-title
+            color: $mainTitleColor
+        &-line
+            background-color: $accentColor
+    &-form
+        margin: 90px -33px 0 -33px
+        &-list
+            display: flex
+            width: 100%
+        &-item
+            width: 50%
+            padding: 0 33px
+        &-item:first-child
+            display: flex
+            flex-direction: column
+        &-input
+            width: 100%
+            margin-top: 0px
+            & + &
+                margin-top: 40px
+        &-textarea
+            resize: none
+            height: 100%
+    &-link
+        margin-top: 40px
+        margin-bottom: 1px
+
+//footer
+
+.footer
+    padding: 20px 0 15px 0
+    background-color: $black
+    &-container
+        display: flex
+        flex-direction: column
+        align-items: center    
+    &-list
+        margin-left: 0
+        max-width: 320px
+        font-size: 23px
+    &-copyright
+        margin-top: 15px
+        font-size: 12px
+        color: $white
+
+@import _media

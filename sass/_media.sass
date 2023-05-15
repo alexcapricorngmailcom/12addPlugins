@@ -1,0 +1,262 @@
+/* 1280 980 767 640 480 */
+
+@media (max-width: 1280px)
+    .container
+        max-width: 980px
+    
+    .features-img
+            width: 300px
+
+    .testimonial
+        &-list
+            margin: 55px -40px 0 -40px
+            &-item 
+                padding: 0 40px
+
+@media (max-width: 980px)
+    .container
+        max-width: 767px
+
+    .hero
+        &-container
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+        &-info
+            display: flex
+            flex-direction: column
+            &-link
+                align-self: center
+        &-form
+            margin-top: 45px
+
+    .social-media
+        &-container
+            flex-direction: column
+            align-items: stretch
+        &-block
+            text-align: center
+            min-width: auto
+        &-list
+            margin-top: 24px
+            margin-left: 0
+            
+    .features
+        padding: 110px 0
+        &-img
+            display: none
+
+    .features2
+        padding: 105px 0
+        &-img
+            width: 400px
+        &-block
+            margin-left: 70px
+
+    .features3
+        &-block
+            margin-left: 0
+            margin-right: 70px
+
+    .testimonial
+        &-list
+            margin: 55px -20px 0 -20px
+            &-item 
+                padding: 0 20px
+
+@media (max-width: 767px)
+    .container
+        max-width: 640px
+
+    .nav
+        &-menu
+            &-item + &-item
+                margin-left: 30px
+
+    .hero
+        padding: 110px 0
+
+    .features
+        &-block
+            margin-left: 90px
+    
+    .features2
+        padding: 75px 0
+        &-container
+            flex-direction: column
+            align-items: center
+        &-img
+            display: none
+        &-block
+            margin-left: 0
+    
+    .features3
+        &-block
+            margin-top: 0px
+            margin-right: 0px
+
+    .process
+        padding: 75px 0
+        &-list
+            &-item
+                width: 50%
+            &-item:last-child
+                display: none
+
+    .pricing
+        &-list
+            &-item
+                width: 50%
+            &-item:last-child
+                display: none
+
+    .custom
+        padding: 75px 0
+    
+    .contactUs
+        padding: 75px 0
+
+    .footer
+        padding: 15px 0
+
+@media (max-width: 640px)
+    .container
+        max-width: 480px
+
+    .nav
+        &-menu
+            display: none
+            position: fixed
+            z-index: 100
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            background-color: rgba(0, 0, 0, 0.8)
+            text-transform: uppercase
+            
+            &-item
+                & + &
+                    margin-left: 0
+            &-link
+                display: inline-block
+                padding: 20px
+            &-label
+                font-size: 20px
+                font-weight: 700
+                cursor: pointer
+                &-menu
+                    display: block
+
+    .nav-menu-input:checked + .nav-menu
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+
+    .hero
+        &-info
+            text-align: center
+            &-line
+                margin-left: auto
+                margin-right: auto
+    
+    .features
+        &-tabs
+            &-item
+                padding: 45px 30px
+        &-block
+            margin-left: 40px
+            &-title
+                font-size: 18px
+            &-text1
+                margin-top: 20px
+            &-text2
+                margin-top: 20px
+            &-link
+                margin-top: 20px
+            
+    .features2
+        &-block
+            &-title
+                text-align: center
+    
+    .process
+        &-list
+            margin-top: 55px
+            &-item
+                width: 376px
+                margin: 0 auto
+            &-item:nth-child(2)
+                display: none
+
+    .pricing
+        &-list
+            margin-top: 55px
+            &-item
+                width: 380px
+                margin: 0 auto
+            &-item:nth-child(2)
+                display: none
+
+    .testimonial
+        &-list
+            &-item
+                width: 406px
+
+    .contactUs
+        &-form
+            &-list
+                display: flex
+                flex-direction: column
+            &-item
+                width: 100%
+                padding: 0 33px
+                & + &
+                    margin-top: 40px
+        &-link
+            margin-top: 40px
+                
+@media (max-width: 480px)
+    .container
+        max-width: 320px
+    
+    .hero
+        &-form
+            .hero-form-title
+                padding: 20px 25px 15px
+                font-size: 19px
+            &-input
+                width: 245px
+    
+    .social-media
+        &-list
+            margin-top: 20px
+            font-size: 25px
+
+    .features
+        &-container
+            flex-direction: column
+        &-tabs
+            display: flex
+            &-item
+                padding: 39px 28px
+                &:first-child
+                    border-radius: 5px 0px 0 5px
+                &:last-child
+                    border-radius: 0 5px 5px 0px
+                & + &
+                    border-top: none
+                    border-left: 1px solid #c7c7c7
+        &-block
+            text-align: center
+            margin-top: 23px
+            margin-left: 0
+            &-text1, &-text2
+                text-align: justify
+
+    .contactUs
+        &-form
+            &-input
+                width: 100%
